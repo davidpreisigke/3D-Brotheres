@@ -61,6 +61,15 @@ header {
     text-decoration: none;
 }
 
+a {
+  background:  linear-gradient(currentColor 0 0) bottom / 0 2px no-repeat;
+  transition: background-size .3s;
+}
+
+a:hover {
+  background-size: 100% 1px;
+}
+
 .main {
   position: relative;
   overflow: hidden;
@@ -294,44 +303,12 @@ header {
 }
 
 
-/*Nosso Portfólio*/
-.portfolio{
-  padding: 60px 40px;
-  text-align: center;
+.portfolio-grid{
+  display: none;
 }
 
-.portfolio h2{
-  font-size: 28px
-}
-
-.portfólio-grid {
+.portfolio-grid.active{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  align-items: center
-}
-
-
-/*grid das imagens*/
-/*
-.portfólio-grid {
-  display:none;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}*/
-
-.portfólio-grid .active{
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-.portfolio-grid img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 /*client area */
@@ -349,6 +326,14 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.grid{
+  display: none;
+}
+
+.grid.active{
+  display: grid;
 }
 
 

@@ -30,7 +30,7 @@
         <hr>
     
     </div>
-    <hr>
+
     <div class="main-bottom">
        <button class="btn-primary" type="button">Solicitar serviço</button>
         <button class="btn-primary" type="button">Ver Portfólio</button>
@@ -93,25 +93,29 @@
 </section>
 
 <section class="portfolio">
+  <h2>Nosso Portfólio</h2>
 
-    <h2>Nosso Portfólio</h2>
+  <div class="portfolio-switch">
+    <label for="manu">
+      <input type="radio" name="portfolio" id="manu" checked>
+      Manutenção
+    </label>
 
-    <div class="portfólio-grid" class="active">
+    <label for="imp">
+      <input type="radio" name="portfolio" id="imp">
+      Impressão
+    </label>
+  </div>
 
-     <div class="Impressão3D"></div>
-          <img src="assets/logo3dbrothers.jpg" alt="">
-          <img src="assets/logo3dbrothers.jpg" alt="">
-          <img src="assets/logo3dbrothers.jpg" alt="">
-          <img src="assets/logo3dbrothers.jpg" alt="">
+  <div id="gridManu" class="portfolio-grid active">
+    <img src="assets/backgroundImgMain.png" alt="">
+  </div>
 
-     <div class="manutenção"></div>
-          <img src="assets/logo3dbrothers.jpg" alt="">
-          <img src="assets/logo3dbrothers.jpg" alt="">
-          <img src="assets/logo3dbrothers.jpg" alt="">
-          <img src="assets/logo3dbrothers.jpg" alt="">
-    
-    </div>
+  <div id="gridImp" class="portfolio-grid">
+    <img src="assets/logo3dbrothers.jpg" alt="">
+  </div>
 </section>
+
 
 <section class="client-area">
     <h3>Já é nosso cliente ou colaborador?</h3>
@@ -128,5 +132,9 @@
     </ul>
 </nav>
 
+
+<script src="main.js"></script>
 </body>
+
+
 </html>
